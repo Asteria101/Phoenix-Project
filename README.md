@@ -2,7 +2,7 @@
 Phoenix project for soccer team
 
 ### Objectives
-- [ ] Create a class ```Player``` which variables are name, number, and position;
+- [x] Create a class ```Player``` which variables are name, number, and position;
 - [ ] In class Player, define ```kick()``` and ```run()``` functions;
   - [ ] ```kick()``` -> depends on the ball distance and if the players owns the ball;
   - [ ] ```run()``` -> run?;
