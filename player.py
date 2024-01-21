@@ -5,16 +5,16 @@ class Player():
         self.name : str = name
         self.number : int = number
         self.position : tuple[int] = position
-        self.behaviour = Behaviour
+        self.behaviour = Behaviour.ball_owner()
 
         self.print_intro()
 
     def kick(self, distance_ball : float):
-        if distance_ball <= 0.6 and self.behaviour.ball_owner():
+        if distance_ball <= 0.6 and self.behaviour:
             print("Dá pra chutar a bola.")
 
     def run(self):
-        print(f"Estou correndo e estou {}")
+        print(f"Estou correndo.")
 
     def print_intro(self):
         if self.name == "Leticia":
