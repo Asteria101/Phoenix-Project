@@ -8,4 +8,4 @@ Phoenix project for soccer team
   - [x] ```run()``` -> run?;
 - [x] Create class ```Behaviour``` which variables are mood and mode;
   - [x] Define ```ball_owner()``` function for determining if the player has the ball;
-- [ ] Use ```threading``` library for running multiple players at once.
+- [x] Use ```threading``` library for running multiple players at once.
