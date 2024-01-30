@@ -3,9 +3,9 @@ import threading
 
 class Player():
     def __init__(self, name : str = "Leticia", number : int = 21, position : tuple[int] = (0, 0)) -> None:
-        self.name : str = name
-        self.number : int = number
-        self.position : tuple[int] = position
+        self.name = name
+        self.number = number
+        self.position = position
         self.behaviour = Behaviour()
 
         self.print_intro()
@@ -16,6 +16,8 @@ class Player():
     def kick(self, distance_ball : float):
         if distance_ball <= 0.6 and self.behaviour.ball_owner():
             print("Dá pra chutar a bola.")
+        else:
+            self.run()
 
     def run(self):
         print(f"Estou correndo. E estou {self.behaviour.mood}")
